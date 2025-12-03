@@ -1,0 +1,17 @@
+
+---
+
+# **📌 5. report.txt**
+
+```txt
+Hash function: MD5 (converted to 32-bit integer)
+Virtual nodes (replicas): 200
+Reason: More replicas -> better load balance
+
+Simulation:
+• 8 original nodes
+• 25% removed (2 nodes)
+• 10,000 keys
+
+Consistent Hash result ≈ Very low migration
+Modulo Hash result ≈ Very high migration

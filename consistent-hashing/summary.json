@@ -1,0 +1,27 @@
+{
+  "moved_consistent_pct": 23.73,
+  "moved_mod_pct": 95.28,
+  "removed_nodes": [
+    "node0",
+    "node16",
+    "node3",
+    "node7",
+    "node8"
+  ],
+  "stats_consistent_before": {
+    "mean": 500,
+    "stdev": 52.03172109396344
+  },
+  "stats_consistent_after": {
+    "mean": 666.6666666666666,
+    "stdev": 58.96288851661036
+  },
+  "stats_mod_before": {
+    "mean": 500,
+    "stdev": 22.49888886145269
+  },
+  "stats_mod_after": {
+    "mean": 666.6666666666666,
+    "stdev": 31.712598267705673
+  }
+}

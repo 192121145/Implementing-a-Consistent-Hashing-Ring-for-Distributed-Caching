@@ -1,0 +1,61 @@
+Simulation log for Consistent Hashing vs Modulo hashing
+Parameters: num_nodes=20, num_keys=10000, replicas=100, removal_fraction=0.25, seed=42
+
+Initial nodes: ['node0', 'node1', 'node2', 'node3', 'node4', 'node5', 'node6', 'node7', 'node8', 'node9', 'node10', 'node11', 'node12', 'node13', 'node14', 'node15', 'node16', 'node17', 'node18', 'node19']
+Removing 5 nodes (25%): ['node0', 'node16', 'node3', 'node7', 'node8']
+
+---- Redistribution Results ----
+Consistent Hashing: 2373 keys moved out of 10000 (23.73%)
+Modulo Hashing    : 9528 keys moved out of 10000 (95.28%)
+
+---- Load Distribution Stats (mean, population stdev) ----
+Consistent BEFORE removal: mean=500.00, stdev=52.03
+Consistent AFTER removal : mean=666.67, stdev=58.96
+Modulo    BEFORE removal : mean=500.00, stdev=22.50
+Modulo    AFTER removal  : mean=666.67, stdev=31.71
+
+---- Sample mappings for first 10 keys ----
+Key	ConsistentBefore	ConsistentAfter	ModuloBefore	ModuloAfter
+key-0	node8	node4	node3	node18
+key-1	node6	node6	node18	node12
+key-2	node18	node18	node14	node13
+key-3	node15	node15	node4	node6
+key-4	node9	node9	node11	node2
+key-5	node7	node5	node7	node11
+key-6	node1	node1	node0	node9
+key-7	node17	node17	node7	node4
+key-8	node9	node9	node15	node14
+key-9	node8	node1	node15	node1
+
+Consistent Hashing - counts after removal:
+  node1: 704
+  node10: 574
+  node11: 665
+  node12: 627
+  node13: 607
+  node14: 721
+  node15: 623
+  node17: 713
+  node18: 648
+  node19: 676
+  node2: 620
+  node4: 706
+  node5: 800
+  node6: 595
+  node9: 721
+Modulo Hashing - counts after removal:
+  node1: 626
+  node10: 660
+  node11: 658
+  node12: 681
+  node13: 690
+  node14: 679
+  node15: 605
+  node17: 698
+  node18: 677
+  node19: 661
+  node2: 635
+  node4: 676
+  node5: 631
+  node6: 688
+  node9: 735
